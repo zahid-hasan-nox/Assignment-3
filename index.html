@@ -14,10 +14,10 @@
     <script src="https://kit.fontawesome.com/46a0597978.js" crossorigin="anonymous"></script>
 </head>
 <body class="sora">
-    <header class="container mx-auto px-4 bg-black">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]  mx-auto lg:px-20">
         <nav class="bg-red-700">
             <div class="navbar bg-base-100">
-                <div class="navbar-start">
+                <div class="navbar-start flex flex-row-reverse justify-between mx-auto">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
@@ -49,21 +49,35 @@
                   </div>
                   <a><img class="p-4 w-40" src="./c2-assets/logo-header.png" alt=""></a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center bg-green-100 ">
                   <ul class="menu menu-horizontal px-1">
                     <li><a>Product</a></li>
                     <li><a>Services</a></li>            
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end gap-5">
+                <div class="navbar-end  gap-5">
                     <i class="fa-solid fa-magnifying-glass text-2xl"></i>
                     <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                  <a class="btn border-gray-500 text-black">Login</a>
+                  <a class="btn border-green-600 bg-white text-black">Login</a>
                   <a class="btn bg-green-600 text-white">Register</a>
                 </div>
               </div>
         </nav>
+
+        <!-- hero -->
+
+        <div class="flex flex-col items-center ">
+          <!-- 1nd-part-hero -->
+            <div>
+              <h1 class="text-6xl text-center text-[#111111]">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+              <p class="text-center text-[#111111] text-lg">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <!-- 2nd part hero -->
+            <div class="mt-10">
+              <img class=" lg:w-auto" src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </div>
     </header>
     <main class=" mx-auto  mt-10">
         <!-- service section -->
@@ -286,7 +300,7 @@
       <div class="relative -top-64 lg:-top-48  bg-[#EFEBE3] rounded-xl mx-4 lg:mx-20 lg:flex items-center justify-around ">
         <!-- 1 -->
         <div class="px-20 py-10">
-          <img class="w-fit" src="./c2-assets/vegetable-busket.png" alt="">
+          <img class="w-fit mx-auto" src="./c2-assets/vegetable-busket.png" alt="">
         </div>
         <!-- 2 -->
         <div class="px-20 lg:py-10 flex flex-col items-center lg:items-start gap-6">
