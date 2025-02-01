@@ -12,69 +12,70 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/46a0597978.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="sora">
-    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]  mx-auto lg:px-20">
-        <nav class="bg-red-700">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start flex flex-row-reverse justify-between mx-auto">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                          </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a><img class="p-4 w-40" src="./c2-assets/logo-header.png" alt=""></a>
-                </div>
-                <div class="navbar-center bg-green-100 ">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Product</a></li>
-                    <li><a>Services</a></li>            
-                    <li><a>Contact us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end  gap-5">
-                    <i class="fa-solid fa-magnifying-glass text-2xl"></i>
-                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
-                  <a class="btn border-green-600 bg-white text-black">Login</a>
-                  <a class="btn bg-green-600 text-white">Register</a>
-                </div>
-              </div>
-        </nav>
+
+
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]  mx-auto lg:px-20">      
+      <nav class="border-b-2 border-green-500 lg:border-hidden">
+
+        <div class="hidden lg:flex justify-between items-center py-6 overflow-hidden">
+
+          <!-- logo here -->
+
+          <div>
+            <img class="" src="./c2-assets/logo-header.png" alt="">
+          </div>
+
+          <!-- nav menu here  -->
+          <div>
+            <ul class="flex justify-between gap-4 ml-40">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>            
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          
+          <!-- icon and button here-->
+          <div class="flex items-center gap-6">
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <i class="fa-solid fa-cart-shopping text-2xl"></i>
+            <a class="btn border-green-600 bg-white text-black">Login</a>
+            <a class="btn bg-green-600 text-white">Register</a>
+          </div>
+        </div>
+
+        <!-- ---------- -->
+        <div class="flex justify-between items-center">
+          <div><img class="w-20 animate-ping py-6 px-4 lg:hidden" src="./c2-assets/Group.png" alt=""></div>
+          <div><img class="lg:hidden" src="./c2-assets/bars-3.png" alt=""></div>
+        </div>
+      </nav>
+
+
+
 
         <!-- hero -->
 
         <div class="flex flex-col items-center ">
           <!-- 1nd-part-hero -->
             <div>
-              <h1 class="text-6xl text-center text-[#111111]">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-              <p class="text-center text-[#111111] text-lg">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+              <h1 class="text-6xl text-center lg:animate-bounce py-4 text-[#111111]">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+              <p class="text-center p-2 text-[#111111] text-lg">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
             </div>
             <!-- 2nd part hero -->
-            <div class="mt-10">
+            <div class="mt-10 ">
               <img class=" lg:w-auto" src="./c2-assets/hero-vegetables.png" alt="">
             </div>
         </div>
@@ -106,15 +107,17 @@
             <h2 class="text-[#179800] font-semibold text-2xl pb-4 px-6">Popular Products</h2>
             <div class="lg:flex gap-8">
               <!-- column-1 -->
-              <div class="overflow-hidden relative bg-gradient-to-r from-[#53DB3A] to-[#c9f6cc] ... rounded-xl py-4 px-10 mx-4 lg:w-3/6">
+              <div class="overflow-hidden relative w-full bg-gradient-to-r from-[#53DB3A] to-[#c9f6cc] ... rounded-xl py-4 px-10 mx-4 lg:w-3/6">
                 <div>
                 <h3 class="text-white font-bold text-xl my-4">30% off</h3>
                 <p class="text-[#111111] my-4">Discover a world of treats, toys, and <br> essentials handpicked for </p>
                 <button class="bg-white py-2 px-5 mx-auto items-start rounded-xl text-[#111111] hover:bg-green-400">Buy Now</button>
                 </div>
-                <div class=" lg:w-full bg-blue-600 absolute mx-24 my-9 ">
-                  <img class="" src="./c2-assets/vegetable-offer.png" alt="">
+
+                <div class=" mx-auto my-0 overflow-hidden ">
+                  <img class=" relative " src="./c2-assets/vegetable-offer.png" alt="">
                 </div>
+
               </div>
               <!-- column-2 -->
                <div class="grid grid-cols-2 lg:grid-cols-3 grid-rows-3 gap-6 w-full mt-10 lg:mt-auto p-4">
@@ -297,7 +300,7 @@
     </main>
     <footer class="bg-[#179800]  mt-80  lg:mt-0">
       <!--footer 1st div -->
-      <div class="relative -top-64 lg:-top-48  bg-[#EFEBE3] rounded-xl mx-4 lg:mx-20 lg:flex items-center justify-around ">
+      <div class="relative -top-64 lg:-top-48  bg-[#EFEBE3] rounded-xl mx-4  lg:py-10 lg:mx-20 lg:flex items-center justify-around ">
         <!-- 1 -->
         <div class="px-20 py-10">
           <img class="w-fit mx-auto" src="./c2-assets/vegetable-busket.png" alt="">
